@@ -1,7 +1,6 @@
 package utils;
 
 import annotations.*;
-import models.PositionsEnum;
 
 
 import java.lang.reflect.Field;
@@ -12,6 +11,7 @@ public class Validator {
         Field[] fields = obj.getClass().getDeclaredFields();
 
         for (Field field : fields) {
+            boolean wasAccessible = field.isAccessible();
             field.setAccessible(true);
 
             if (field.isAnnotationPresent(Address.class)) {
@@ -42,14 +42,6 @@ public class Validator {
                 }
             }
 
-            if (field.isAnnotationPresent(Position.class)) {
-                try {
-                    PositionsEnum position = PositionsEnum.valueOf((String) field.get(obj));
-                }catch(Exception e) {
-                    throw new Exception(field.getAnnotation(Position.class).message());
-                }
-            }
-
             if (field.isAnnotationPresent(Salary.class)) {
                 double salary = field.getDouble(obj);
                 if (salary <= 0) {
@@ -57,7 +49,7 @@ public class Validator {
                 }
             }
 
-
+            field.setAccessible(wasAccessible);
         }
     }
 }

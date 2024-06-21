@@ -5,8 +5,8 @@ import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
-@Retention(RetentionPolicy.RUNTIME)
-@Target(ElementType.FIELD)
-public @interface Position {
-    String message() default "Invalid position format";
+@Retention(RetentionPolicy.SOURCE)
+@Target({ElementType.TYPE})
+public @interface GeneratedFactory {
+
 }

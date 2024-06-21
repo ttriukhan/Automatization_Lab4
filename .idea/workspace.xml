@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="050f4393-df36-49f1-88b1-eb4400f33c67" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/annotations/GeneratedElement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/models/CEO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/models/Developer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/models/EmployeeTags.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/models/IEmployee.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/models/ProjectManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/models/Tester.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/processors/ElementInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/processors/FactoryBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/processors/GeneratedFactoryProcessor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/annotations/Address.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/annotations/Address.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/annotations/Email.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/annotations/Email.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/annotations/GenerateClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/annotations/GeneratedFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/annotations/Name.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/annotations/Name.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/annotations/Phone.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/annotations/Phone.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/annotations/Position.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/annotations/Salary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/annotations/Salary.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/models/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/Employee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/models/PositionsEnum.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/processors/GenerateClassProcessor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/utils/Validator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/Validator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/services/javax.annotation.processing.Processor" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/services/javax.annotation.processing.Processor" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 0
+}]]></component>
+  <component name="ProjectId" id="2iCHRCunujbfqKQGUT1hiu392O4" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/user/Desktop/Lab4_Triukhan/src/main/java/processors",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\user\Desktop\Lab4_Triukhan\src\main\java\processors" />
+      <recent name="C:\Users\user\Desktop\Lab4_Triukhan\src\main\java\models" />
+      <recent name="C:\Users\user\Desktop\Lab4_Triukhan\src\main\java\annotations" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="Lab4_Triukhan" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="050f4393-df36-49f1-88b1-eb4400f33c67" name="Changes" comment="" />
+      <created>1718987629852</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1718987629852</updated>
+      <workItem from="1718987631002" duration="5241000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

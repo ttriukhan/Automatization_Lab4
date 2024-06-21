@@ -6,8 +6,7 @@ import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
 @Retention(RetentionPolicy.SOURCE)
-@Target(ElementType.TYPE)
-public @interface GenerateClass {
-    String className();
-    String[] fields();
+@Target({ElementType.TYPE})
+public @interface GeneratedElement {
+    String value();
 }

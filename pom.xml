@@ -38,7 +38,7 @@
                         <configuration>
                             <compilerArgument>-proc:none</compilerArgument>
                             <includes>
-                                <include>processors/GenerateClassProcessor.java</include>
+                                <include>processors/GeneratedFactoryProcessor.java</include>
                             </includes>
                         </configuration>
                     </execution>

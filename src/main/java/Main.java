@@ -1,51 +1,52 @@
-import models.Employee;
+import models.IEmployee;
+import models.EmployeeFactory;
+import models.EmployeeTags;
 import utils.Validator;
-
-import java.util.ArrayList;
-import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
 
-        Employee[] employeesCandidates = {
-                new Employee("John Doe", "Developer", "john.doe@example.com", "+0988888888", "Maven, 25A", 5000.0),
-                new Employee("Jane Smith", "Student", "jane.smith@example.com", "+952567854", "Gradle, 90, A4", 7000.0),
-                new Employee("Mike Johnson", "CEO", "mike.johnsonexample.com", "+90909090", "Intellij, 54", 10000.0),
-                new Employee("Alice Brown", "Intern", "alice.brown@example.com", "+f9999999", "Feta, 38B", 2000.0)
-        } ;
+        IEmployee[] employees = {
+                EmployeeFactory.createEmployee(EmployeeTags.CEO),
+                EmployeeFactory.createEmployee(EmployeeTags.PROJECT_MANAGER),
+                EmployeeFactory.createEmployee(EmployeeTags.DEVELOPER),
+                EmployeeFactory.createEmployee(EmployeeTags.TESTER),
+                EmployeeFactory.createEmployee(EmployeeTags.OTHER)
+        };
 
-        System.out.println("Employee Candidates:");
-        for (Employee employee: employeesCandidates) {
-            System.out.println("\n"+employee);
-        }
-
-        List<Employee> goodEmployees = new ArrayList<>();
-
-        System.out.println("\n\n");
-        for (Employee employee: employeesCandidates) {
-            if(validateEmployee(employee))
-                goodEmployees.add(employee);
-        }
-
-        System.out.println("\n\n");
-        System.out.println("Good Employees:");
-        for(Employee employee: goodEmployees) {
-            System.out.println("\n"+employee);
-        }
-
-    }
-
-    private static boolean validateEmployee(Employee employee) {
-        try {
-            Validator.validate(employee);
-            System.out.println("Employee validated successfully:");
+        System.out.println("\nDefault good employees:\n");
+        for (IEmployee employee: employees) {
             System.out.println(employee);
-            System.out.println("----------------------------------");
-            return true;
-        } catch (Exception e) {
-            System.out.println("Validation error for employee " + employee.getName() + ": " + e.getMessage());
-            System.out.println("----------------------------------");
-            return false;
+            try {
+                Validator.validate(employee);
+                System.out.println("IEmployee validated successfully:");
+                employee.doJob();
+                System.out.println("----------------------------------\n\n");
+            } catch (Exception e) {
+                System.out.println("Validation error for employee " + employee.getName() + ": " + e.getMessage());
+                System.out.println("----------------------------------\n\n");
+            }
         }
+
+        employees[0].setName("WRONG NAME ***");
+        employees[1].setEmail("WRONG EMAIL");
+        employees[2].setPhone("WRONG PHONE");
+        employees[3].setAddress("WRONG ADDRESS &&&");
+        employees[4].setSalary(-500);
+
+        System.out.println("\nBad employees: \n");
+        for (IEmployee employee: employees) {
+            System.out.println(employee);
+            try {
+                Validator.validate(employee);
+                System.out.println("Employee validated successfully:");
+                employee.doJob();
+                System.out.println("----------------------------------\n\n");
+            } catch (Exception e) {
+                System.out.println("Validation error for employee " + employee.getName() + ": " + e.getMessage());
+                System.out.println("----------------------------------\n\n");
+            }
+        }
+
     }
 }

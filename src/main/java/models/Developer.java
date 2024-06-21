@@ -2,8 +2,8 @@ package models;
 
 import annotations.*;
 
-@GeneratedElement(EmployeeTags.OTHER)
-public class Employee implements IEmployee {
+@GeneratedElement(EmployeeTags.DEVELOPER)
+public class Developer implements IEmployee {
     @Name
     private String name;
     @Email
@@ -15,7 +15,7 @@ public class Employee implements IEmployee {
     @Salary
     private double salary;
 
-    public Employee(String name, String email, String phone, String address, double salary) {
+    public Developer(String name, String email, String phone, String address, double salary) {
         this.name = name;
         this.email = email;
         this.phone = phone;
@@ -23,7 +23,7 @@ public class Employee implements IEmployee {
         this.salary = salary;
     }
 
-    public Employee() {
+    public Developer() {
         this("Name", "email@gmail.com", "0988888888", "St Nicola, 83", 70000);
     }
 
@@ -80,7 +80,7 @@ public class Employee implements IEmployee {
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
-        sb.append("Employee Card");
+        sb.append("Developer Card");
         sb.append("\nName: ").append(name);
         sb.append("\nEmail: ").append(email);
         sb.append("\nPhone: ").append(phone);
@@ -91,7 +91,7 @@ public class Employee implements IEmployee {
 
     @Override
     public void doJob() {
-        System.out.println("\"I work, I do\"");
+        System.out.println("\"I develop, nothing works\"");
     }
 
     @Override
